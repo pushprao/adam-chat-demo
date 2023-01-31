@@ -123,7 +123,12 @@ export default function Demo() {
             value={newQuestion}
             onChange={(e) => setNewQuestion(e.target.value)}
           />
-          <Button size="small" variant="contained" onClick={addMessage}>
+          <Button
+            size="small"
+            variant="contained"
+            onClick={addMessage}
+            sx={{ minWidth: "200px", borderRadius: 5 }}
+          >
             Ask question
           </Button>
         </Stack>
